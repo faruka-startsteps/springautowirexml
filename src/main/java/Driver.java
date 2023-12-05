@@ -5,21 +5,21 @@ public class Driver {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-
-        Cat cat = (Cat) context.getBean("cat");
-        System.out.println(cat.toString());
+//
+//        Cat cat = (Cat) context.getBean("cat");
+//        System.out.println(cat.toString());
 
         // Auto-Wiring ‘byName’
         Dog dog = (Dog) context.getBean("dog");
         System.out.println(dog.toString());
 
-        // Auto-Wiring ‘byType’
-        Elephant elephant = (Elephant) context.getBean("elephant");
-        System.out.println(elephant.toString());
-
-        // Auto-Wiring ‘constructor’
-        Frog frog = (Frog) context.getBean("frog");
-        System.out.println(frog.toString());
+//        // Auto-Wiring ‘byType’
+//        Elephant elephant = (Elephant) context.getBean("elephant");
+//        System.out.println(elephant.toString());
+//
+//        // Auto-Wiring ‘constructor’
+//        Frog frog = (Frog) context.getBean("frog");
+//        System.out.println(frog.toString());
 
         context.close();
     }

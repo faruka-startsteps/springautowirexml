@@ -4,6 +4,8 @@ public class Cat {
     private String name;
     private Color color;
 
+    private String catName;
+
     public String getName() {
         return name;
     }
@@ -18,6 +20,14 @@ public class Cat {
 
     public void setColor(Color color) {
         this.color= color;
+    }
+
+    public String getCatName() {
+        return catName;
+    }
+
+    public void setCatName(String catName) {
+        this.catName = catName;
     }
 
     @Override

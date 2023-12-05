@@ -1,7 +1,7 @@
 public class Elephant {
 
     private String name;
-    private Color color;
+    private Color colorr;
 
     public String getName() {
         return name;
@@ -11,16 +11,16 @@ public class Elephant {
         this.name = name;
     }
 
-    public Color getColor() {
-        return color;
+    public Color getColorr() {
+        return colorr;
     }
 
-    public void setColor(Color color) {
-        this.color= color;
+    public void setColorr(Color colorr) {
+        this.colorr= colorr;
     }
 
     @Override
     public String toString() {
-        return "The " + name + " has " + color.toString();
+        return "The " + name + " has " + colorr.toString();
     }
 }

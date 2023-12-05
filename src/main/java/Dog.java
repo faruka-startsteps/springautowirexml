@@ -14,7 +14,7 @@ public class Dog {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColorr(Color color) {
         this.color = color;
     }
 
